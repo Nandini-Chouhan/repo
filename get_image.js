@@ -12,5 +12,4 @@ async function getImage() {
     let resp = await axios.get(url, config);
     resp.data.pipe(fs.createWriteStream('image.jpg'));
 }
-
 getImage();
